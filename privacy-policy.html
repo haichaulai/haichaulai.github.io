@@ -21,7 +21,7 @@
 <body>
 
 <h1>Privacy Policy — Pixwand</h1>
-<p class="updated">Last updated: 28 September 2026</p>
+<p class="updated">Last updated: 5 October 2026</p>
 
 <p>
   Pixwand is a photo and video editor. This policy explains what happens to your
@@ -40,11 +40,37 @@
       anywhere and is never shared with advertisers or anyone else.</li>
   <li>Edited results are written to your photo library only when you tap
       <em>Save to Photos</em>, or handed to another app only when you use the
-      system Share sheet. That requires the "Add&nbsp;to&nbsp;Photos"
-      permission and nothing more.</li>
+      system Share sheet or <em>Share to Facebook</em>. Saving requires the
+      "Add&nbsp;to&nbsp;Photos" permission; only <em>Share to Facebook</em>
+      with a video also asks to read your library (see below).</li>
   <li>Temporary working files are kept in the app's private storage while you
       work and are deleted by the app.</li>
 </ul>
+
+<h2 id="facebook">Sharing to Facebook</h2>
+<ul>
+  <li><em>Share to Facebook</em> (shown only when the Facebook app is
+      installed) opens Facebook's own composer through Meta's Facebook SDK.
+      Nothing is posted until you post it there.</li>
+  <li>A photo is handed straight to the Facebook app. Facebook accepts a video
+      only from your photo library, so Pixwand first saves the video there and
+      then asks to read your library to find that copy. "Limited" access is
+      enough; Pixwand reads nothing else.</li>
+  <li>The Facebook SDK starts only when you tap <em>Share to Facebook</em>.
+      Its automatic app events and advertising-ID collection are turned off,
+      so Pixwand sends Meta no usage or purchase data. Like any app, the SDK
+      contacts Meta's servers when it runs; what you post is then governed by
+      <a href="https://www.facebook.com/privacy/policy/">Meta's Privacy Policy</a>.</li>
+</ul>
+
+<h2 id="data-deletion">Deleting your data</h2>
+<p>
+  Pixwand keeps no account and stores nothing about you on any server, so
+  there is nothing for us to delete. Your edits live only on your device:
+  deleting the app removes them. Anything you posted to Facebook is yours to
+  delete there (open the post → ••• → Delete), and you can remove Pixwand's
+  photo access any time in Settings → Pixwand → Photos.
+</p>
 
 <h2>Microphone</h2>
 <p>
@@ -52,6 +78,14 @@
   access and records audio <strong>only while you are actively recording</strong>.
   The recording is saved on your device and used as the slideshow's soundtrack.
   It is never uploaded or shared by the app.
+</p>
+
+<h2>In-app purchase</h2>
+<p>
+  Pixwand offers an optional one-time purchase, <strong>Remove Ads</strong>.
+  Payment is handled entirely by Apple through the App Store; the app never
+  sees your payment details. The app only learns from Apple whether you own
+  the purchase, so it can turn ads off, and keeps that on your device.
 </p>
 
 <h2>Location</h2>
@@ -121,8 +155,9 @@
 <h2>Network</h2>
 <p>
   Editing works fully offline. The app connects to the internet only to load
-  ads through the Google Mobile Ads SDK; if you are offline, ads simply don't
-  appear and everything else keeps working.
+  ads through the Google Mobile Ads SDK and, when you use
+  <em>Share to Facebook</em>, through Meta's Facebook SDK; if you are offline,
+  ads simply don't appear and everything else keeps working.
 </p>
 
 <h2>Children</h2>
