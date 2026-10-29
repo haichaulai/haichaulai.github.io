@@ -1,182 +1,99 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pixwand — Privacy Policy</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; color: #1c1c1e; background: #fff;
-  }
-  @media (prefers-color-scheme: dark) { body { color: #e5e5ea; background: #000; } a { color: #6ea8fe; } }
-  h1 { font-size: 1.7rem; margin-bottom: 4px; }
-  h2 { font-size: 1.15rem; margin-top: 2rem; }
-  .updated { color: #8e8e93; font-size: 0.9rem; }
-  ul { padding-left: 1.2rem; }
-  code { background: rgba(127,127,127,.15); padding: 1px 4px; border-radius: 4px; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixwand — Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; color: #1c1c1e; background: #fff;
+    }
+    @media (prefers-color-scheme: dark) { body { color: #e5e5ea; background: #1c1c1e; } a { color: #6cb6ff; } }
+    h1 { font-size: 1.9rem; margin: 0 0 4px; }
+    h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
+    .meta { color: #8e8e93; font-size: .9rem; margin-bottom: 1.5rem; }
+    a { color: #0a84ff; }
+    ul { padding-left: 1.3rem; }
+    li { margin: .25rem 0; }
+    code { background: rgba(127,127,127,.15); padding: 1px 5px; border-radius: 4px; }
+    footer { margin-top: 3rem; color: #8e8e93; font-size: .85rem; border-top: 1px solid rgba(127,127,127,.25); padding-top: 1rem; }
+  </style>
 </head>
 <body>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Pixwand &middot; Last updated: 29 October 2026</p>
 
-<h1>Privacy Policy — Pixwand</h1>
-<p class="updated">Last updated: 5 October 2026</p>
+  <p>This Privacy Policy explains how the <strong>Pixwand</strong> app ("the App", "we", "us")
+     handles information when you use it. We designed Pixwand to do its editing work on your
+     device, and we collect as little as possible.</p>
 
-<p>
-  Pixwand is a photo and video editor. This policy explains what happens to your
-  information when you use it. In short: <strong>your photos, videos and
-  recordings never leave your device.</strong> The app shows ads provided by
-  Google AdMob, and Google collects some device and usage information to serve
-  and measure those ads, as described below.
-</p>
+  <h2>Your photos and videos stay on your device</h2>
+  <p>Pixwand is an on-device photo and video editor. The photos, videos, and audio you open,
+     edit, or export are processed <strong>entirely on your device</strong>. We do not upload,
+     store, or have access to your media, and we never send it to our servers (we do not operate
+     media servers). Exported files are saved only where you choose (your Photos library or the
+     Files app).</p>
 
-<h2>Your photos and videos</h2>
-<ul>
-  <li>You choose photos and videos with Apple's system picker. The app only
-      receives the items you pick.</li>
-  <li>All editing — filters, adjustments, crop and markup, slideshow rendering,
-      trimming, joining clips, captions and stickers — happens entirely on your device. Your media is never uploaded
-      anywhere and is never shared with advertisers or anyone else.</li>
-  <li>Edited results are written to your photo library only when you tap
-      <em>Save to Photos</em>, or handed to another app only when you use the
-      system Share sheet or <em>Share to Facebook</em>. Saving requires the
-      "Add&nbsp;to&nbsp;Photos" permission; only <em>Share to Facebook</em>
-      with a video also asks to read your library (see below).</li>
-  <li>Temporary working files are kept in the app's private storage while you
-      work and are deleted by the app.</li>
-</ul>
+  <h2>Information collected</h2>
+  <p>We use the following third-party services, which collect limited data to help us run and
+     improve the App:</p>
+  <ul>
+    <li><strong>Google Analytics for Firebase</strong> — anonymous usage and diagnostics data,
+        such as which screens and features are used, app events, crash and performance data,
+        and device/app information (device model, OS version, language, and a device/installation
+        identifier). This is used to understand how the App is used and to improve it.</li>
+    <li><strong>Google AdMob</strong> — serves advertising in the free version of the App and may
+        use advertising identifiers and related data to measure and (where permitted) personalize
+        ads.</li>
+    <li><strong>Apple (App Store &amp; In-App Purchases)</strong> — if you buy Pixwand Pro,
+        the purchase is processed by Apple. We receive only the subscription/purchase status
+        needed to unlock Pro features; we never receive your payment details.</li>
+  </ul>
+  <p>We do not ask for your name, email, contacts, or precise location, and we do not require an
+     account to use the App.</p>
 
-<h2 id="facebook">Sharing to Facebook</h2>
-<ul>
-  <li><em>Share to Facebook</em> (shown only when the Facebook app is
-      installed) opens Facebook's own composer through Meta's Facebook SDK.
-      Nothing is posted until you post it there.</li>
-  <li>A photo is handed straight to the Facebook app. Facebook accepts a video
-      only from your photo library, so Pixwand first saves the video there and
-      then asks to read your library to find that copy. "Limited" access is
-      enough; Pixwand reads nothing else.</li>
-  <li>The Facebook SDK starts only when you tap <em>Share to Facebook</em>.
-      Its automatic app events and advertising-ID collection are turned off,
-      so Pixwand sends Meta no usage or purchase data. Like any app, the SDK
-      contacts Meta's servers when it runs; what you post is then governed by
-      <a href="https://www.facebook.com/privacy/policy/">Meta's Privacy Policy</a>.</li>
-</ul>
+  <h2>Purposes</h2>
+  <ul>
+    <li>Analytics — to understand feature usage and fix problems.</li>
+    <li>Advertising — to show ads in the free version.</li>
+    <li>App functionality — to deliver and unlock purchased features.</li>
+  </ul>
 
-<h2 id="data-deletion">Deleting your data</h2>
-<p>
-  Pixwand keeps no account and stores nothing about you on any server, so
-  there is nothing for us to delete. Your edits live only on your device:
-  deleting the app removes them. Anything you posted to Facebook is yours to
-  delete there (open the post → ••• → Delete), and you can remove Pixwand's
-  photo access any time in Settings → Pixwand → Photos.
-</p>
+  <h2>Tracking and your choices</h2>
+  <p>On first launch (or in iOS Settings), you can allow or decline app tracking through Apple's
+     App Tracking Transparency prompt. You can also limit ad personalization in
+     <em>Settings &rarr; Privacy &amp; Security &rarr; Tracking</em> and reset your advertising
+     identifier at any time. Declining tracking does not stop you from using the App.</p>
 
-<h2>Microphone</h2>
-<p>
-  If you record a voice-over for a slideshow, the app asks for microphone
-  access and records audio <strong>only while you are actively recording</strong>.
-  The recording is saved on your device and used as the slideshow's soundtrack.
-  It is never uploaded or shared by the app.
-</p>
+  <h2>Third-party policies</h2>
+  <ul>
+    <li>Google (Firebase &amp; AdMob): <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+    <li>How Google uses data: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></li>
+    <li>Apple: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+  </ul>
 
-<h2>In-app purchase</h2>
-<p>
-  Pixwand offers an optional one-time purchase, <strong>Remove Ads</strong>.
-  Payment is handled entirely by Apple through the App Store; the app never
-  sees your payment details. The app only learns from Apple whether you own
-  the purchase, so it can turn ads off, and keeps that on your device.
-</p>
+  <h2>Data retention and security</h2>
+  <p>Analytics and advertising data are retained by Google according to their policies. Because we
+     do not run our own servers, we do not store personal data ourselves. We use the privacy and
+     security controls provided by Apple and Google.</p>
 
-<h2>Location</h2>
-<p>
-  Location is used only for the optional <strong>place tag</strong> ("📍 place
-  name") you can add to a video, and only in these ways:
-</p>
-<ul>
-  <li><strong>Where a video was filmed.</strong> If a video you picked already
-      contains the location your camera saved in it, the app reads it from the
-      file to suggest the place name. No permission is needed for this.</li>
-  <li><strong>Your current location.</strong> Only if you tap <em>Use Current
-      Location</em> does the app ask for location permission ("While Using the
-      App") and read your location once.</li>
-  <li>To turn a location into a place name, the coordinates are sent to
-      Apple's geocoding service (part of iOS). The app does not store your
-      location, send it to us, or share it with advertisers or anyone else.</li>
-  <li>You can always type a place name instead, and you can turn location
-      access off at any time in <em>Settings → Privacy &amp; Security →
-      Location Services → Pixwand</em>.</li>
-</ul>
+  <h2>Children</h2>
+  <p>Pixwand is not directed at children under 13. We do not knowingly collect personal information
+     from children.</p>
 
-<h2>Advertising</h2>
-<p>
-  Pixwand is free and supported by ads. Ads are provided by
-  <strong>Google AdMob</strong> (Google LLC) through the Google Mobile Ads SDK.
-  We do not run our own analytics and we do not receive personal information
-  about you; AdMob only gives us aggregated reports (for example, how many ads
-  were shown).
-</p>
-<p>To show ads, measure how they perform and prevent fraud, Google may collect:</p>
-<ul>
-  <li><strong>Device identifiers</strong> — the Identifier for Advertising
-      (IDFA) <em>only if you allow tracking</em> (see below), and other
-      app-level identifiers.</li>
-  <li><strong>IP address</strong>, which may be used to estimate your general
-      location (country or city — not your precise location).</li>
-  <li><strong>Device and app information</strong> — device model, operating
-      system version, language, app version.</li>
-  <li><strong>Ad interactions</strong> — which ads were shown and whether they
-      were tapped.</li>
-  <li><strong>Diagnostics</strong> — ad load times and errors.</li>
-</ul>
-<p>
-  How Google uses this information is described in
-  <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and
-  <a href="https://policies.google.com/technologies/partner-sites">How Google
-  uses information from sites or apps that use its services</a>.
-</p>
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy from time to time. Changes will be posted on this page with a new
+     "Last updated" date.</p>
 
-<h2>Your choices about ads</h2>
-<ul>
-  <li><strong>Tracking permission (iPhone and iPad).</strong> The app asks for
-      permission before the IDFA can be used to personalise ads. If you choose
-      <em>Ask App Not to Track</em>, you will still see ads, but they will not be
-      personalised using that identifier. You can change this at any time in
-      <em>Settings → Privacy &amp; Security → Tracking</em>.</li>
-  <li><strong>European Economic Area, United Kingdom and Switzerland.</strong>
-      Before any ads are requested, the app shows Google's consent message so
-      you can choose how your data is used for advertising. You can review or
-      change your choice at any time from <em>Privacy choices</em> in the app.</li>
-  <li><strong>Personalised ads in general.</strong> You can manage ad
-      personalisation from Google at
-      <a href="https://adssettings.google.com">adssettings.google.com</a>.</li>
-</ul>
+  <h2>Contact</h2>
+  <p>Questions about this policy or your privacy? Email
+     <a href="mailto:haichaulai@gmail.com">haichaulai@gmail.com</a>.</p>
 
-<h2>Network</h2>
-<p>
-  Editing works fully offline. The app connects to the internet only to load
-  ads through the Google Mobile Ads SDK and, when you use
-  <em>Share to Facebook</em>, through Meta's Facebook SDK; if you are offline,
-  ads simply don't appear and everything else keeps working.
-</p>
-
-<h2>Children</h2>
-<p>
-  Pixwand is not directed at children under 13, and we do not knowingly collect
-  personal information from children. The app itself collects no personal data
-  from anyone; ad requests are handled by Google as described above.
-</p>
-
-<h2>Changes to this policy</h2>
-<p>
-  If this policy changes, the updated version will be posted at this URL with a
-  new "last updated" date.
-</p>
-
-<h2>Contact</h2>
-<p>
-  Questions about privacy or this policy: <a href="mailto:haichaulai@gmail.com">haichaulai@gmail.com</a>
-</p>
-
+  <footer>
+    &copy; 2026 Pixwand. &middot; <a href="support.html">Support</a>
+  </footer>
 </body>
 </html>
