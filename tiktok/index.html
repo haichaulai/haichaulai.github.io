@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TikTok Share Result</title>
+<style>
+  body{font-family:-apple-system,system-ui,sans-serif;margin:0;padding:24px;background:#000;color:#fff}
+  h1{font-size:20px}
+  .k{color:#8a8a8a;font-size:13px;margin-top:14px}
+  .v{font-size:17px;word-break:break-all;background:#161616;padding:10px 12px;border-radius:10px;margin-top:4px}
+  .ok{color:#2dd36f} .err{color:#ff4d6a}
+</style>
+</head>
+<body>
+  <h1>TikTok share callback</h1>
+  <div id="out"></div>
+<script>
+  var p = new URLSearchParams(location.search);
+  var el = document.getElementById('out');
+  if (![...p].length) { el.innerHTML = '<div class="v">No parameters — opened directly.</div>'; }
+  for (var [k,v] of p) {
+    var cls = (k.indexOf('error')>-1 || k.indexOf('err')>-1) ? 'err'
+            : (k.indexOf('state')>-1 && v==='20000') ? 'ok' : '';
+    el.innerHTML += '<div class="k">'+k+'</div><div class="v '+cls+'">'+v+'</div>';
+  }
+</script>
+</body>
+</html>
