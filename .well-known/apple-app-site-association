@@ -3,8 +3,13 @@
     "apps": [],
     "details": [
       {
+        "appIDs": [ "7R23RM3F87.com.haichaulai.aipixeditor" ],
+        "components": [
+          { "/": "/tiktok", "comment": "TikTok's Share Kit callback" },
+          { "/": "/tiktok/*", "comment": "the same page with a trailing slash or deeper" }
+        ],
         "appID": "7R23RM3F87.com.haichaulai.aipixeditor",
-        "paths": [ "/tiktok", "/tiktok/*" ]
+        "paths": [ "/tiktok", "/tiktok/", "/tiktok*" ]
       }
     ]
   }
