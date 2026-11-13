@@ -1,0 +1,157 @@
+/* Pixwand's site: one sheet for the home page, the guide and the legal pages.
+   Pale violet throughout, picked up from the app's own accent. */
+
+:root {
+  color-scheme: light dark;
+  --bg: #f4f0fd;          /* the page: pale violet */
+  --card: #ffffff;        /* panels sitting on it */
+  --ink: #1c1a24;         /* body text */
+  --dim: #6f6a7d;         /* captions, footers */
+  --rule: rgba(106, 61, 240, .16);
+  --accent: #6a3df0;      /* the app's purple */
+  --accent-ink: #ffffff;  /* text on the accent */
+  --link: #5a2fe0;
+  --shadow: 0 6px 22px rgba(60, 20, 140, .10);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15121d;
+    --card: #1e1a29;
+    --ink: #ece9f5;
+    --dim: #a09ab4;
+    --rule: rgba(160, 130, 255, .22);
+    --accent: #8a63ff;
+    --accent-ink: #130c26;
+    --link: #b3a0ff;
+    --shadow: 0 6px 22px rgba(0, 0, 0, .35);
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+/* A narrower column reads better for long prose (the legal pages). */
+body.prose { max-width: 760px; }
+
+h1 { font-size: 1.95rem; margin: 0 0 4px; letter-spacing: -.01em; }
+h2 { font-size: 1.22rem; margin: 2rem 0 .5rem; }
+h3 { font-size: 1rem; margin: 1.2rem 0 .25rem; }
+a { color: var(--link); }
+.meta { color: var(--dim); font-size: .9rem; margin-bottom: 1.5rem; }
+.tip { color: var(--dim); font-size: .92rem; margin-top: .8rem; }
+ul { padding-left: 1.25rem; }
+li { margin: .28rem 0; }
+code { background: rgba(127, 127, 127, .15); padding: 1px 5px; border-radius: 4px; }
+
+/* A panel: anything that should lift off the violet. */
+.card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin: 1rem 0;
+  box-shadow: var(--shadow);
+}
+
+/* The App Store button. */
+.get {
+  display: inline-block;
+  margin: .4rem 0 1rem;
+  padding: 13px 24px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 1.02rem;
+  font-weight: 650;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+.get:hover { filter: brightness(1.08); }
+
+/* The five tabs, side by side, each one a way into its own guide. */
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin: 1.2rem 0 .4rem;
+  padding: 0;
+  list-style: none;
+}
+.tabs a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+  padding: 16px 8px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  text-align: center;
+  text-decoration: none;
+}
+.tabs a:hover { border-color: var(--accent); }
+.tabs .icon { font-size: 1.5rem; line-height: 1; }
+.tabs .name { font-weight: 650; font-size: .98rem; }
+.tabs .what { color: var(--dim); font-size: .82rem; line-height: 1.35; }
+
+/* A guide step: the clip on one side, what to do on the other. */
+.step {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 28px;
+  align-items: start;
+  padding: 26px 0;
+  border-top: 1px solid var(--rule);
+}
+.step.wide { grid-template-columns: 1fr; }
+.step video {
+  width: 100%;
+  border-radius: 22px;
+  display: block;
+  background: #000;
+  box-shadow: var(--shadow);
+}
+.num {
+  display: inline-block;
+  min-width: 1.6em;
+  padding: 0 .45em;
+  margin-right: .5em;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: .85rem;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: 2px;
+}
+
+/* Breadcrumb back out of a guide page. */
+.back { font-size: .9rem; margin: 0 0 1rem; }
+
+footer {
+  margin-top: 2.6rem;
+  color: var(--dim);
+  font-size: .85rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 1rem;
+}
+
+/* One column on a phone; the clip no wider than a hand. */
+@media (max-width: 680px) {
+  .tabs { grid-template-columns: repeat(2, 1fr); }
+  .tabs li:last-child { grid-column: 1 / -1; }
+  .step { grid-template-columns: 1fr; gap: 16px; }
+  .step video { max-width: 240px; margin: 0 auto; }
+}
