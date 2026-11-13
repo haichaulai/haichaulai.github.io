@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixwand — How to Use</title>
+  <meta name="description" content="A short visual guide to Pixwand: choose a video or photo, move between the five tabs, apply a look, then save or share.">
+  <style>
+    :root { color-scheme: light dark; --rule: rgba(127,127,127,.25); --dim: #8e8e93; }
+    * { box-sizing: border-box; }
+    body {
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px; margin: 0 auto; padding: 32px 20px 64px; color: #1c1c1e; background: #fff;
+    }
+    @media (prefers-color-scheme: dark) { body { color: #e5e5ea; background: #1c1c1e; } a { color: #6cb6ff; } }
+    h1 { font-size: 1.9rem; margin: 0 0 4px; }
+    h2 { font-size: 1.25rem; margin: 0 0 .4rem; }
+    .meta { color: var(--dim); font-size: .9rem; margin-bottom: 1.5rem; }
+    a { color: #0a84ff; }
+
+    /* A step: the clip on one side, what to do on the other. */
+    .step {
+      display: grid; grid-template-columns: 260px 1fr; gap: 28px; align-items: start;
+      padding: 28px 0; border-top: 1px solid var(--rule);
+    }
+    .step video {
+      width: 100%; border-radius: 22px; display: block;
+      background: #000; box-shadow: 0 6px 24px rgba(0,0,0,.16);
+    }
+    .num {
+      display: inline-block; min-width: 1.6em; padding: 0 .45em; margin-right: .5em;
+      border-radius: 999px; background: #6a3df0; color: #fff;
+      font-size: .85rem; font-weight: 700; text-align: center; vertical-align: 2px;
+    }
+    ul { padding-left: 1.2rem; margin: .6rem 0 0; }
+    li { margin: .3rem 0; }
+    .tip { color: var(--dim); font-size: .92rem; margin-top: .8rem; }
+    .tabs { list-style: none; padding: 0; margin: .6rem 0 0; }
+    .tabs li { margin: .45rem 0; }
+    .tabs b { font-weight: 650; }
+    footer { margin-top: 2.5rem; color: var(--dim); font-size: .85rem; border-top: 1px solid var(--rule); padding-top: 1rem; }
+
+    /* One column on a phone, with the clip no taller than a thumb's reach. */
+    @media (max-width: 620px) {
+      .step { grid-template-columns: 1fr; gap: 16px; }
+      .step video { max-width: 240px; margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+  <h1>How to use Pixwand</h1>
+  <p class="meta">Three short clips, recorded in the app. No sound — nothing to turn down.</p>
+
+  <p>Pixwand edits photos and videos on your device. Nothing is uploaded, and your media
+     never leaves your iPhone or iPad.</p>
+
+  <section class="step">
+    <video src="choose-video.mp4" autoplay muted loop playsinline preload="metadata"
+           aria-label="Choosing a video from the photo library in the Trim tab"></video>
+    <div>
+      <h2><span class="num">1</span>Choose a photo or video</h2>
+      <p>Every tab starts by asking for media. Tap the pill in the header —
+         <b>Choose Video</b>, <b>Choose Photos</b> or <b>Add Clips</b> — and pick where it
+         comes from:</p>
+      <ul>
+        <li><b>Photo Library</b> — anything in Photos. Pixwand only sees what you select.</li>
+        <li><b>Files</b> — a clip from iCloud Drive, a folder or another app.</li>
+        <li><b>Camera</b> — take a photo or record a video there and then.</li>
+      </ul>
+      <p class="tip">You can also send media to Pixwand from another app's share sheet,
+         or with "Open in Pixwand" from Files.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <video src="tour-tabs.mp4" autoplay muted loop playsinline preload="metadata"
+           aria-label="Moving between the five tabs along the bottom of the app"></video>
+    <div>
+      <h2><span class="num">2</span>Find the right tab</h2>
+      <p>Five tabs sit along the bottom, one for each kind of job:</p>
+      <ul class="tabs">
+        <li><b>Edit Image</b> — filters, adjustments, retouching, crop, text and markup on a photo.</li>
+        <li><b>Video</b> — turn a set of photos into a video with music and transitions.</li>
+        <li><b>Trim</b> — cut a shorter clip out of a video, and everything that works on one clip:
+            effects, speed, captions, overlays.</li>
+        <li><b>Join</b> — put several clips one after another, with transitions between them.</li>
+        <li><b>Collage</b> — lay photos or clips out side by side in a grid.</li>
+      </ul>
+      <p class="tip">Your work is kept per tab, so moving to another one and back doesn't lose it.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <video src="choose-effect.mp4" autoplay muted loop playsinline preload="metadata"
+           aria-label="Applying filters to a photo in the Edit Image tab"></video>
+    <div>
+      <h2><span class="num">3</span>Apply a look</h2>
+      <p>Open the <b>Filters</b> tool under the preview and tap a thumbnail — the picture
+         changes straight away. Filters come in groups:</p>
+      <ul>
+        <li><b>Looks</b> — finished grades like Cinematic or Golden Hour.</li>
+        <li><b>Classic</b> — Noir, Vintage, Vibrant, Warm.</li>
+        <li><b>Creative</b> — stronger, more stylised treatments.</li>
+        <li><b>My LUTs</b> — .cube files you bring in yourself.</li>
+      </ul>
+      <p class="tip">The <b>Intensity</b> slider dials a filter back. <b>Reset</b> clears it,
+         and undo is in the top corner of the preview.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div style="grid-column: 1 / -1">
+      <h2>Then save or share</h2>
+      <p><b>Save</b> writes the result to your photo library. <b>Share</b> opens the places it
+         can go — Facebook, Instagram, TikTok, Messages, or anywhere else through the system
+         share sheet. Pixwand Pro removes the watermark and unlocks the Pro tools.</p>
+      <p class="tip">Still stuck? <a href="../support.html">Support &amp; FAQ</a> has the
+         common questions, or write to
+         <a href="mailto:haichaulai@gmail.com">haichaulai@gmail.com</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Pixwand. &middot; <a href="../">Home</a> &middot;
+    <a href="../support.html">Support</a> &middot;
+    <a href="../privacy-policy.html">Privacy Policy</a>
+  </footer>
+</body>
+</html>
